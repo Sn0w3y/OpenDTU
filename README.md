@@ -78,3 +78,25 @@ Generated using: `git log --date=short --pretty=format:"* %h%x09%ad%x09%s" | gre
 | E-Star HERF-800      | NRF24L01+          | 2         | 2           | 1         |
 | E-Star HERF-1600     | NRF24L01+          | 4         | 2           | 1         |
 | E-Star HERF-1800     | NRF24L01+          | 4         | 2           | 1         |
+
+
+
+
+## Examples (illustrative)
+
+Zero feed-in (in German: Nulleinspeisung)
+
+![Schematic01 zero feed-in](https://github.com/helgeerbe/OpenDTU-OnBattery/assets/129660360/0a8ff327-a3b9-4ce1-85fa-5c28a90e2d2a)
+
+With Battery and DC charging via (up to two) Victron MPPT and (optional) Victron SmartShunt<br>
+_Note: Due to the limitation of most ESP32 boards, you can only use two out of three Victron units, i.e. two Victron MPPTs or one Victron MPPT and a Victron SmartShunt. You can not use two Victron MPPTs and a Victron SmartShunt at the same time._
+
+![Schematic02 - Victon+Battery](https://private-user-images.githubusercontent.com/4600384/326197341-c79089ef-9559-43b5-8281-56ce1262d062.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ0MDY5MzYsIm5iZiI6MTcxNDQwNjYzNiwicGF0aCI6Ii80NjAwMzg0LzMyNjE5NzM0MS1jNzkwODllZi05NTU5LTQzYjUtODI4MS01NmNlMTI2MmQwNjIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQyOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MjlUMTYwMzU2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzMzMmM3NmJjNjM0MWVjMTIyYWM4YjViZDc2MDdiZjNiODY3MmQ1NzQwMjFiMGI1NzNjOTZiZTBhYzUzYmQzMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.FJovXIs-lWVrvnEfwun_csCwIAnr5qCZHN8Aohnw1z8)
+
+With Pylontech Battery and DC charging via (up to two) Victron MPPT
+
+![Schematic03 - Victron+Pylontech](https://github.com/helgeerbe/OpenDTU-OnBattery/assets/129660360/48123826-1988-42f9-a702-91db203729f4)
+
+With Battery and AC charging via Huawei Rectifier
+
+![Schematic04 HuaweiR4850+Pylontech](https://github.com/helgeerbe/OpenDTU-OnBattery/assets/129660360/32bfe0f0-b07b-400c-b95c-8f1606671cd3)
